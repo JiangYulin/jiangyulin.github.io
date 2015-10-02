@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>姜玉林</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" type="text/css" />
     <script>
     /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
      * Build: http://modernizr.com/download/#-cssanimations-shiv-cssclasses-testprop-testallprops-domprefixes-load
@@ -11,19 +12,21 @@
 </script>
 </head>
 <body>
-    <div class="main-container">
+    <section class="main-container">
         <div class="logo-container">
             <div class="top"></div>
             <div class="bottom"></div>
         </div>
         <h1 class="my-name">姜玉林</h1>
         <p class="major-wrap">网页设计师 & 前后端工程师</p>
-        <hr />
        <p class="job-content"> 致力于设计并开发基于桌面以及移动设备的网页程序.
         </p>
-        <hr />
-        <p class="how-to-contact">你可以通过电子邮件与我取得联系<a href="mailto:hello.wenzhe@hotmail.com">hello.wenzhe@hotmail.com</a></p>
-    </div>
+        <p class="how-to-contact">你可以通过以下方式与我取得联系</a></p>
+        <ul class="social-network">
+            <li><a href="mailto:hello.wenzhe@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a target="_blank" href="http://weibo.com/Jiang1yulin"><i class="fa fa-weibo"></i></a></li>
+        </ul>
+    </section>
 </body>
 <style>
     * {
@@ -81,7 +84,7 @@
         font-size: 14px;
         margin-left: -14px;
         height: 60px;
-        display: inline-block;
+        display: block;
         color: #666;
         opacity: 0;
         animation: fadeIn 2s 1200ms forwards;
@@ -102,6 +105,22 @@
         opacity: 0;
         animation: fadeIn 2s 1700ms forwards;
     }
+    .social-network {
+        opacity: 0;
+        animation: fadeIn 2s 1700ms forwards;
+    }
+    .social-network li {
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 26px;
+    }
+    .fa-weibo {
+        color: rgba(244,4,9, 0.5);
+    }
+    .fa-envelope {
+        color: rgba(20,30,220,0.3);
+    }
+    
 
     hr {
         max-width: 800px ;
